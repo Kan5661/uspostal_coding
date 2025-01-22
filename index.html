@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- <h1>US Postal Coding memory</h1> -->
+        <button id="test-start">Start</button>
+        <div class="timer hidden">0:00</div>
+        <div class="coding_guide hidden" >
+            <div class="guide_text">Coding Guide</div>
+            <div class="guide_content">
+                <div class="guide_range">
+                    <div class="guide_range_text">Address Range</div>
+                    <div class="guide_range_area" id="A"></div>
+                    <div class="guide_range_area" id="B"></div>
+                    <div class="guide_range_area" id="C"></div>
+                    <div class="guide_range_area_else">All mail that does not fall in the range of A, B, or C</div>
+                </div>
+                <div class="guide_route">
+                    <div class="guide_route_text">Delivery route</div>
+                    <div class="route_letter">A</div>
+                    <div class="route_letter">B</div>
+                    <div class="route_letter">C</div>
+                    <div class="route_letter">D</div>
+                </div>
+            </div>
+        </div>
+        <div class="questions hidden"></div>
+        <button class="submit hidden">Submit</button>
+        <div class="score hidden"></div>
+        <script src="./main.js" type="module" async defer></script>
+    </body>
+</html>

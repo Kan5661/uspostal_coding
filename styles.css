@@ -1,0 +1,141 @@
+h1 {
+    text-align: center;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 200px;
+}
+
+.hidden {
+    display: none ! important;
+}
+
+.timer {
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+    margin-top: 100px
+}
+
+.coding_guide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 100px auto;
+    flex-direction: column;
+}
+
+.guide_text {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px
+}
+
+.guide_content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-grow: 1;
+    border-top: 1px solid black;
+}
+
+.guide_range {
+    border-right: 1px solid black;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    height: 100%;
+}
+
+.guide_route {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    height: 100%;
+}
+
+.guide_range_text, .guide_route_text {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px
+}
+
+.guide_range_area, .route_letter, .guide_range_area_else {
+    width: 100%;
+    height: 100px;
+    flex-grow: 1;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.route_letter {
+    font-size: 20px
+}
+
+.coding_guide_hidden {
+    display: none;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.question {
+    display: flex;
+    flex-direction: row;
+    width: min-content;
+    /* height: 100px; */
+    border: 1px solid black;
+    margin: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.question_prompt {
+    width: 200px;
+    height: 50px;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border-right: 0px
+}
+
+.answer {
+    width: 100px;
+    height: 50px;
+    border-left: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.selected {
+    background-color: rgb(71, 255, 71);
+}
+
+.submit {
+    margin: 20px auto
+}
