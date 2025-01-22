@@ -12,6 +12,11 @@ const clock = document.querySelector('.timer')
 const questions = document.querySelector('.questions')
 const submit = document.querySelector('.submit')
 const score = document.querySelector('.score')
+const time_input = document.querySelector('.time-input')
+const questions_input = document.querySelector('.questions-input')
+const input_container = document.querySelector('.input-container')
+
+let questions_number
 
 
 let question_answer
@@ -40,7 +45,7 @@ const start_timer = (minutes, addresses) => {
             submit.addEventListener('click', on_submit)
             submit.disabled = true
             score.classList.remove('hidden')
-            generate_questions(addresses, 10)
+            generate_questions(addresses, questions_number)
         }
 }
     , 1000)
@@ -207,6 +212,9 @@ const on_submit = () => {
     start_btn.classList.remove('hidden')
     submit.classList.add('hidden')
     questions.classList.add('hidden')
+    time_input.classList.remove('hidden')
+    input_container.classList.remove('hidden')
+
     let correct = 0
     const answers = document.querySelectorAll('.selected')
     console.log(answers)
@@ -218,16 +226,24 @@ const on_submit = () => {
     console.log(`${correct}/${question_answer.length}`)
     score.classList.remove('hidden')
     score.textContent = `SCORE: ${correct}/${question_answer.length}`
+
+    while(questions.firstChild) {
+        questions.removeChild(questions.firstChild)
+    }
 }
 
 
 start_btn.addEventListener('click', () => {
+    const exam_time = time_input.value
     clear_addresses()
-    let exam_time = 5
     start_btn.classList.add('hidden')
     coding_guide.classList.remove('hidden')
     clock.classList.remove('hidden')
     clock.textContent = `${exam_time}:00`
+    input_container.classList.add('hidden')
+    score.classList.add('hidden')
     start_timer(exam_time, generate_addresses())
+    questions_number = questions_input.value
+
 
 })
