@@ -223,7 +223,7 @@ const on_submit = () => {
 
 start_btn.addEventListener('click', () => {
     clear_addresses()
-    let exam_time = 0.1
+    let exam_time = 5
     start_btn.classList.add('hidden')
     coding_guide.classList.remove('hidden')
     clock.classList.remove('hidden')

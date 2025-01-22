@@ -139,3 +139,10 @@ button {
 .submit {
     margin: 20px auto
 }
+
+.score {
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+    margin-top: 100px
+}
