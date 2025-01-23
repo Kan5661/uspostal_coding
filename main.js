@@ -91,10 +91,10 @@ const generate_addresses = () => {
     }
 
     // shuffle the addresses
-    for (let i = addresses.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [addresses[i], addresses[j]] = [addresses[j], addresses[i]];
-    }
+    // for (let i = addresses.length - 1; i > 0; i--) {
+    //     const j = Math.floor(Math.random() * (i + 1));
+    //     [addresses[i], addresses[j]] = [addresses[j], addresses[i]];
+    // }
     
     for (let i = 0; i < addresses.length; i++) {
         if (i < 3) addresses[i].letter = 'A'
